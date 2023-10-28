@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7meikfenhw7r"]
+
+[ext_resource type="PackedScene" uid="uid://t3ahrav54fgo" path="res://Scences/Main/background.tscn" id="1_kp1st"]
+[ext_resource type="PackedScene" uid="uid://bppu6y44u7hoc" path="res://Scences/Paddles/player_paddle.tscn" id="1_l488r"]
+[ext_resource type="PackedScene" uid="uid://b1jw2wp1u6lt4" path="res://Scences/GameObjects/Ball/pong_ball.tscn" id="3_t5ui2"]
+
+[node name="Main" type="Node"]
+
+[node name="Background" parent="." instance=ExtResource("1_kp1st")]
+
+[node name="PlayerPaddle" parent="." instance=ExtResource("1_l488r")]
+position = Vector2(1125, 324)
+
+[node name="PongBall" parent="." instance=ExtResource("3_t5ui2")]
+position = Vector2(576, 288)

@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://c64s11r55vu0y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_30h42"]
+size = Vector2(1152, 8)
+
+[node name="Bar" type="StaticBody2D"]
+collision_mask = 0
+
+[node name="BarSprite" type="ColorRect" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -576.0
+offset_top = -4.0
+offset_right = 576.0
+offset_bottom = 4.0
+grow_horizontal = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_30h42")
